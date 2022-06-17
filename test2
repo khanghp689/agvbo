@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Cau1.css">
+</head>
+<style>
+    body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 30vw;
+    height: 30vh;
+    object-fit: fill;
+    display: block;
+}
+
+.container_grid{
+    width: fit-content;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 0px;
+    position: relative;
+}
+
+.cover{
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0);
+    width: 28vw;
+    height: 26vh;
+    left: 32vw;
+    top: 32vh;;
+    pointer-events: none;
+    z-index: 0;
+    transition: all 1s;
+}
+
+
+.container_item1:hover~.cover{
+    background-color: rgba(24, 24, 81, 0.832);
+    left: 1vw;
+    top: 2vh;
+}
+.text1{
+    position: absolute;
+    width: 8vw;
+    text-align: center;
+    font: 1vw sans-serif;
+    color: rgba(255, 255, 255, 0);
+    left: 11vw;
+    top: 12vh;
+    z-index: 1;
+    transition: all 1.2s;
+}
+.container_item1:hover .text1{
+    color: rgb(255, 255, 255);
+}
+
+
+.container_item2:hover~.cover{
+    background-color: rgba(6, 6, 189, 0.563);
+    left: 31vw;
+    top: 2vh;
+}
+.text2{
+    position: absolute;
+    width: 8vw;
+    text-align: center;
+    font: 1vw sans-serif;
+    color: rgba(255, 255, 255, 0);
+    left: 41vw;
+    top: 12vh;
+    z-index: 1;
+    transition: all 1.2s;
+}
+.container_item2:hover .text2{
+    color: rgb(255, 255, 255);
+}
+
+
+.container_item3:hover~.cover{
+    background-color: rgba(6, 6, 189, 0.288);
+    left: 61vw;
+    top: 2vh;
+}
+.text3{
+    position: absolute;
+    width: 8vw;
+    text-align: center;
+    font: 1vw sans-serif;
+    color: rgba(255, 255, 255, 0);
+    left: 71vw;
+    top: 12vh;
+    z-index: 1;
+    transition: all 1.2s;
+}
+.container_item3:hover .text3{
+    color: rgb(255, 255, 255);  
+}
+
+
+
+.container_item4:hover~.cover{
+    background-color: rgba(209, 78, 42, 0.399);
+    left: 1vw;
+    top: 32vh;
+}
+.text4{
+    position: absolute;
+    width: 8vw;
+    text-align: center;
+    font: 1vw sans-serif;
+    color: rgba(255, 255, 255, 0);
+    left: 11vw;
+    top: 42vh;
+    z-index: 1;
+    transition: all 1.2s;
+}
+.container_item4:hover .text4{
+    color: rgb(255, 255, 255);
+}
+
+
+.container_item5:hover~.cover{
+    background-color: rgba(29, 141, 40, 0.399);
+    left: 31vw;
+    top: 32vh;
+}
+.text5{
+    position: absolute;
+    width: 8vw;
+    text-align: center;
+    font: 1vw sans-serif;
+    color: rgba(255, 255, 255, 0);
+    left: 41vw;
+    top: 42vh;
+    z-index: 1;
+    transition: all 1.2s;
+}
+.container_item5:hover .text5{
+    color: rgb(255, 255, 255);
+}
+
+
+.container_item6:hover~.cover{
+    background-color: rgba(82, 42, 13, 0.399);
+    left: 61vw;
+    top: 32vh;
+}
+.text6{
+    position: absolute;
+    width: 8vw;
+    text-align: center;
+    font: 1vw sans-serif;
+    color: rgba(255, 255, 255, 0);
+    left: 71vw;
+    top: 42vh;
+    z-index: 1;
+    transition: all 1.2s;
+}
+.container_item6:hover .text6{
+    color: rgb(255, 255, 255);
+}
+
+
+.container_item7:hover~.cover{
+    background-color: rgba(26, 26, 36, 0.399);
+    left: 1vw;
+    top: 62vh;
+}
+.text7{
+    position: absolute;
+    width: 8vw;
+    text-align: center;
+    font: 1vw sans-serif;
+    color: rgba(255, 255, 255, 0);
+    left: 11vw;
+    top: 72vh;
+    z-index: 1;
+    transition: all 1.2s;
+}
+.container_item7:hover .text7{
+    color: rgb(255, 255, 255);
+}
+
+
+.container_item8:hover~.cover{
+    background-color: rgba(167, 122, 27, 0.399);
+    left: 31vw;
+    top: 62vh;
+}
+.text8{
+    position: absolute;
+    width: 8vw;
+    text-align: center;
+    font: 1vw sans-serif;
+    color: rgba(255, 255, 255, 0);
+    left: 41vw;
+    top: 72vh;
+    z-index: 1;
+    transition: all 1.2s;
+}
+.container_item8:hover .text8{
+    color: rgb(255, 255, 255);
+}
+</style>
+<body>
+    <div class="container_grid">
+        <div class="container_item1">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/wvfrkayr0mg-christelle-bourgeois-776x1063.jpg" alt="salon">
+            <div class="text1">
+                DEARESC<br>DIARY
+            </div>
+        </div>
+        <div class="container_item2">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/fbanijhrol4-annie-spratt-776x951.jpg" alt="cactus">
+            <div class="text2">
+                WINDOW<br>SILL?
+            </div>
+        </div>
+        <div class="container_item3">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/2rm8p0rkxiw-marius-masalar-776x582.jpg" alt="box">
+            <div class="text3">
+                LISTEN<br>TO ME
+            </div>
+        </div>
+        <div class="container_item4">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/71nlan-2ya-andrew-neel-2-776x620.jpg" alt="cup">
+            <div class="text4">
+                TRAVEL<br>OFTEN
+            </div>
+        </div>
+        <div class="container_item5">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/hdyo6rr3kqk-scott-webb-1172x780.jpg" alt="lily">
+            <div class="text5">
+                ANONTHER<br>PLANT?
+            </div>
+        </div>
+        <div class="container_item6">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/fvazbu6zae-andrew-neel-776x517.jpg" alt="book">
+            <div class="text6">
+                ON THE<br>WAVE
+            </div>
+        </div>
+        <div class="container_item7">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/typewriter-1-776x968.jpg" alt="fax">
+            <div class="text7">
+                GREAT<br>GATSBY
+            </div>
+        </div>
+        <div class="container_item8">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/xohlruw4k8-christelle-bourgeois-776x758.jpg" alt="salon">
+            <div class="text8">
+                IN THE<br>SUN
+            </div>
+        </div>
+        <div class="cover"></div>
+    </div>
+</body>
+</html>

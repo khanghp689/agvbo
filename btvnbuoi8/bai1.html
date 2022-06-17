@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body{
+    background-color: rgb(41, 37, 37);
+    margin: 0px;
+    padding-top: 10px;
+    color: white;
+}
+.Item{
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.img{  
+    width: 400px;
+    height: 400px;
+    transition: all 1s;
+}
+.img_item{
+    position: absolute;
+    bottom: 1px;
+    }
+.Item:hover .img{
+    transform: scale(1.2);
+}
+.Item1{
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 2px;
+    transition: all 1s;
+}
+.Item2{
+    font-size: 12px;
+    padding-bottom: 8px;
+}
+
+.Item3{
+    font-size: 5px;
+    border: 1px solid white;
+    width: fit-content;
+    padding: 1%;
+    margin-left: 88%;
+}
+</style>
+<body>
+    <div>
+        <div class="Item">
+            <img class="img"
+                src="https://images.pexels.com/photos/127513/pexels-photo-127513.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="">
+            <div class="img_item">
+                <div class="Item1">
+                    Amazing First Title
+                </div>
+                <div class="Item2">
+                    Jan 29, 2018
+                </div>
+                <div class="Item2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                </div>
+                <div class="Item3">
+                    Read more &#8594
+                </div>
+            </div>
+        </div>
+        <div class="Item">
+            <img class="img"
+                src="https://images.pexels.com/photos/631954/pexels-photo-631954.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="">
+            <div class="img_item">
+                <div class="Item1">
+                    Amazing Second Title that is Quite Long
+                </div>
+                <div class="Item2">
+                    Jan 29, 2018
+                </div>
+                <div class="Item2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                </div>
+                <div class="Item3">
+                    Read more &#8594
+                </div>
+            </div>
+        </div>
+        <div class="Item">
+            <img class="img"
+                src="https://images.pexels.com/photos/248486/pexels-photo-248486.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="">
+            <div class="img_item">
+                <div class="item1">
+                    Amazing Title
+                </div>
+                <div class="Item2">
+                    Jan 29, 2018
+                </div>
+                <div class="Item2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                </div>
+                <div class="Item3">
+                    Read more &#8594
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
